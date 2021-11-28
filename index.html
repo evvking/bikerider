@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Bikerider</title>
+        <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+        <link href='index.css' rel='stylesheet'>
+    </head>
+    <body>
+        <h1>Bikerider</h1>
+        <div class='div-outer'>
+            <div class='div-inner-big'>
+                <h3>Dane</h3><br>
+                <label for='p_name'>Nazwa podjazdu:</label>
+                <input id='p_name'>
+                <button class='sum' id='b_name'>Przenieś >></button><br><br>
+                <label for='p_distance'>Długość podjazdu:</label>
+                <input id='p_distance' placeholder='w kilometrach'>
+                <button class='sum' id='b_distance'>Przenieś >></button><br><br>
+                <label for='p_alt_s'>Wysokość początkowa:</label>
+                <input id='p_alt_s' placeholder='w metrach'>
+                <button class='sum' id='b_alt_s'>Przenieś >></button><br><br>
+                <label for='p_alt_e'>Wysokość końcowa:</label>
+                <input id='p_alt_e' placeholder='w metrach'>
+                <button class='sum' id='b_alt_e'>Przenieś >></button><br><br>
+                <label for='p_way'>Rodzaj drogi:</label>
+                <select id='p_way'>
+                    <option value='Prosta'>Prosta</option>
+                    <option value='Z zakrętami'>Z zakrętami</option>
+                    <option value='Kręta'>Kręta</option>
+                </select>
+                <button class='sum' id='b_way'>Przenieś >></button><br><br>
+                <label for='p_waytype'>Typ nawierchni:</label>
+                <select id='p_waytype'>
+                    <option value='Asfalt'>Asfalt</option>
+                    <option value='Utwardzony żwir'>Żwir (utwardzony)</option>
+                    <option value='Żwir'>Żwir (luźny)</option>
+                    <option value='Bruk'>Bruk</option>
+                    <option value='Trawa'>Trawa</option>
+                    <option value='Piasek'>Piasek</option>
+                </select>
+                <button class='sum' id='b_waytype'>Przenieś >></button><br><br>
+                <label for='p_qual'>Nawierzchnia jest dobra:</label>
+                <input id='p_qual' type="checkbox">
+                <button class='sum' id='b_qual'>Przenieś >></button><br><br>
+                <label for='p_weather'>Pogoda:</label>
+                <select id='p_weather'>
+                    <option value='2'>Słonecznie</option>
+                    <option value='2.5'>Pełne słońce</option>
+                    <option value='3'>Pełne słońce + upał</option>
+                    <option value='1'>Zachmurzenie</option>
+                    <option value='1.5'>Deszcz / burza</option>
+                </select>
+                <button class='sum'>Przenieś >></button><br><br>
+                <label for='p_wind'>Wiatr:</label>
+                <select id='p_wind'>
+                    <option value='Przedni'>Przedni</option>
+                    <option value='Boczny'>Boczny</option>
+                    <option value='Tylny'>Tylny</option>
+                    <option value='Brak'>Brak wiatru</option>
+                </select>
+                <button class='sum' id='b_wind'>Przenieś >></button><br><br><br>
+                <button class='check'>Sprawdź</button>
+            </div>
+            <div class='div-inner-small'>
+                <h4 id='sum_check'>Podsumowanie</h4>
+                <p id='sum_distance'>Dystans:</p>
+                <p id='sum_alt_s'>Wysokość początkowa:</p>
+                <p id='sum_alt_e'>Wysokość końcowa:</p>
+                <p id='sum_way'>Rodzaj drogi:</p>
+                <p id='sum_waytype'>Typ nawierchni:</p>
+                <p>Stan nawierchni:</p>
+                <p>Pogoda:</p>
+                <p>Wiatr:</p>
+            </div>
+        </div>
+        <script src='index.js'></script>
+    </body>
+</html>
