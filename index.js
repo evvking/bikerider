@@ -96,10 +96,10 @@ document.getElementById('b_move').addEventListener('click', function() {
             weather = 3;
             break;
         case 'pochmurno':
-            weather = 1;
+            weather = 1.5;
             break;
         case 'deszcz lub burza':
-            weather = 1.5;
+            weather = 1.8;
             break;
     }
     document.getElementById('sum_weather').textContent = 'Pogoda: ' + pWeather;
@@ -157,25 +157,25 @@ document.getElementById('b_check').addEventListener('click', function() {
         category = 'A2+';
     } else if (difficultyPoints < 1000) {
         category = 'B1';
-    } else if (difficultyPoints < 1200) {
+    } else if (difficultyPoints < 1500) {
         category = 'B1+';
-    } else if (difficultyPoints < 1400) {
-        category = 'B2';
-    } else if (difficultyPoints < 1600) {
-        category = 'B2+';
-    } else if (difficultyPoints < 1800) {
-        category = 'C1';
     } else if (difficultyPoints < 2000) {
+        category = 'B2';
+    } else if (difficultyPoints < 2500) {
+        category = 'B2+';
+    } else if (difficultyPoints < 4000) {
+        category = 'C1';
+    } else if (difficultyPoints < 6500) {
         category = 'C1+';
-    } else if (difficultyPoints < 2200) {
+    } else if (difficultyPoints < 9000) {
         category = 'C2';
-    } else if (difficultyPoints < 2400) {
+    } else if (difficultyPoints < 11500) {
         category = 'C2+';
-    } else if (difficultyPoints < 2600) {
+    } else if (difficultyPoints < 16500) {
         category = 'D1';
-    } else if (difficultyPoints < 2800) {
+    } else if (difficultyPoints < 21500) {
         category = 'D1+';
-    } else if (difficultyPoints < 3000) {
+    } else if (difficultyPoints < 26500) {
         category = 'D2';
     } else {
         category = 'E';
