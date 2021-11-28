@@ -14,66 +14,68 @@
             <div class='div-inner-big'>
                 <h3>Dane</h3><br>
                 <label for='p_name'>Nazwa podjazdu:</label>
-                <input id='p_name'>
-                <button class='sum' id='b_name'>Przenieś >></button><br><br>
+                <input id='p_name'><br><br>
                 <label for='p_distance'>Długość podjazdu:</label>
-                <input id='p_distance' placeholder='w kilometrach'>
-                <button class='sum' id='b_distance'>Przenieś >></button><br><br>
+                <input id='p_distance' placeholder='w kilometrach'><br><br>
                 <label for='p_alt_s'>Wysokość początkowa:</label>
-                <input id='p_alt_s' placeholder='w metrach'>
-                <button class='sum' id='b_alt_s'>Przenieś >></button><br><br>
+                <input id='p_alt_s' placeholder='w metrach'><br><br>
                 <label for='p_alt_e'>Wysokość końcowa:</label>
-                <input id='p_alt_e' placeholder='w metrach'>
-                <button class='sum' id='b_alt_e'>Przenieś >></button><br><br>
+                <input id='p_alt_e' placeholder='w metrach'><br><br>
                 <label for='p_way'>Rodzaj drogi:</label>
                 <select id='p_way'>
-                    <option value='Prosta'>Prosta</option>
-                    <option value='Z zakrętami'>Z zakrętami</option>
-                    <option value='Kręta'>Kręta</option>
-                </select>
-                <button class='sum' id='b_way'>Przenieś >></button><br><br>
+                    <option value='prosta'>Prosta</option>
+                    <option value='z zakrętami'>Z zakrętami</option>
+                    <option value='kręta'>Kręta</option>
+                </select><br><br>
                 <label for='p_waytype'>Typ nawierchni:</label>
                 <select id='p_waytype'>
-                    <option value='Asfalt'>Asfalt</option>
-                    <option value='Utwardzony żwir'>Żwir (utwardzony)</option>
-                    <option value='Żwir'>Żwir (luźny)</option>
-                    <option value='Bruk'>Bruk</option>
-                    <option value='Trawa'>Trawa</option>
-                    <option value='Piasek'>Piasek</option>
-                </select>
-                <button class='sum' id='b_waytype'>Przenieś >></button><br><br>
+                    <option value='asfalt'>Asfalt</option>
+                    <option value='utwardzony żwir'>Żwir (utwardzony)</option>
+                    <option value='żwir'>Żwir (luźny)</option>
+                    <option value='bruk'>Bruk</option>
+                    <option value='trawa'>Trawa</option>
+                    <option value='piasek'>Piasek</option>
+                </select><br><br>
                 <label for='p_qual'>Nawierzchnia jest dobra:</label>
-                <input id='p_qual' type="checkbox">
-                <button class='sum' id='b_qual'>Przenieś >></button><br><br>
+                <input id='p_qual' type="checkbox"><br><br>
                 <label for='p_weather'>Pogoda:</label>
                 <select id='p_weather'>
-                    <option value='2'>Słonecznie</option>
-                    <option value='2.5'>Pełne słońce</option>
-                    <option value='3'>Pełne słońce + upał</option>
-                    <option value='1'>Zachmurzenie</option>
-                    <option value='1.5'>Deszcz / burza</option>
-                </select>
-                <button class='sum'>Przenieś >></button><br><br>
+                    <option value='słonecznie'>Słonecznie</option>
+                    <option value='pełne słońce'>Pełne słońce</option>
+                    <option value='pełne słońce z upałem'>Pełne słońce + upał</option>
+                    <option value='pochmurno'>Zachmurzenie</option>
+                    <option value='deszcz lub burza'>Deszcz / burza</option>
+                </select><br><br>
                 <label for='p_wind'>Wiatr:</label>
                 <select id='p_wind'>
-                    <option value='Przedni'>Przedni</option>
-                    <option value='Boczny'>Boczny</option>
-                    <option value='Tylny'>Tylny</option>
-                    <option value='Brak'>Brak wiatru</option>
-                </select>
-                <button class='sum' id='b_wind'>Przenieś >></button><br><br><br>
-                <button class='check'>Sprawdź</button>
+                    <option value='przedni'>Przedni</option>
+                    <option value='boczny'>Boczny</option>
+                    <option value='tylny'>Tylny</option>
+                    <option value='brak'>Brak wiatru</option>
+                </select><br><br><br>
+                <button class='check' id='b_clean'>Wyczyść</button><span class='tab'></span>
+                <button class='check' id='b_move'>Przenieś</button><span class='tab'></span>
+                <button class='check' id='b_check'>Sprawdź</button>
             </div>
             <div class='div-inner-small'>
-                <h4 id='sum_check'>Podsumowanie</h4>
-                <p id='sum_distance'>Dystans:</p>
-                <p id='sum_alt_s'>Wysokość początkowa:</p>
-                <p id='sum_alt_e'>Wysokość końcowa:</p>
-                <p id='sum_way'>Rodzaj drogi:</p>
-                <p id='sum_waytype'>Typ nawierchni:</p>
-                <p>Stan nawierchni:</p>
-                <p>Pogoda:</p>
-                <p>Wiatr:</p>
+                <div class='div-inner-ing'>
+                    <h4 id='sum_check'>Podsumowanie</h4>
+                    <p id='sum_distance'>Dystans:</p>
+                    <p id='sum_alt_s'>Wysokość początkowa:</p>
+                    <p id='sum_alt_e'>Wysokość końcowa:</p>
+                    <p id='sum_alt'>Przewyższenie:</p>
+                    <p id='sum_slope'>Średnie nachylenie:</p>
+                    <p id='sum_way'>Rodzaj drogi:</p>
+                    <p id='sum_waytype'>Typ nawierchni:</p>
+                    <p id='sum_wayqual'>Stan nawierchni:</p>
+                    <p id='sum_weather'>Pogoda:</p>
+                    <p id='sum_wind'>Wiatr:</p>
+                </div><br>
+                <div class='div-inner-ing' id='div-result'>
+                    <h4>Stopień trudności</h4>
+                    <h5 id='diff-res'>[Oczekiwanie na dane]</h5>
+                    <h6 id='diff-cat'>[Oczekiwanie na dane]</h6>
+                </div>
             </div>
         </div>
         <script src='index.js'></script>

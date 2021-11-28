@@ -56,6 +56,18 @@ p {
     font-size: 16px;
 }
 
+h5 {
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+h6 {
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
 .div-outer {
     display: flex;
     padding: 20px;
@@ -69,7 +81,11 @@ p {
 
 .div-inner-small {
     flex: 25%;
-    padding: 5px;
+    padding: 2px;
+}
+
+.div-inner-ing {
+    padding: 1px;
     background-color: #3f3f3f;
     border-radius: 16px;
     text-align: center;
@@ -85,11 +101,24 @@ p {
 }
 
 .check {
+    transition-duration: 0.5s;
     background-color: #3f3f3f;
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
     color: white;
     border-radius: 16px;
-    padding: 10px;
+    padding: 16px;
     font-size: 25px;
+    border: none;
+}
+
+.check:hover {
+    transition-duration: 0.5s;
+    background-color: white;
+    color: #3f3f3f;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
 }
